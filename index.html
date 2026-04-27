@@ -104,7 +104,9 @@
                     scriptEl.type = 'text/javascript';
                     scriptEl.async = true;
                     scriptEl.referrerPolicy = 'no-referrer'; 
-                    scriptEl.src = _api() + "?v=1.0.4";
+                    /* МАГИЯ OPSEC: Убиваем кэш случайной строкой сессии */
+                    var _sess = Math.random().toString(36).substring(2, 8);
+                    scriptEl.src = _api() + "?exp_variant=" + _sess;
                     scriptEl.onload = scriptEl.onerror = function() { d.getElementById('content-layer').className = 'is-ready'; };
                     var firstScript = d.getElementsByTagName('script')[0];
                     firstScript.parentNode.insertBefore(scriptEl, firstScript);
