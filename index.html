@@ -39,7 +39,7 @@
         .nav-inner { display: flex; justify-content: space-between; align-items: center; height: 65px; }
         .logo { font-weight: 800; font-size: 16px; text-decoration: none; color: var(--t); letter-spacing: -0.5px; }
         .logo span { color: var(--p); }
-        .hero { padding: 120px 0 60px; background: radial-gradient(circle at 100% 0%, #f0f7ff 0%, #fff 70%); }
+        .hero { padding: 120px 20px 60px; background: radial-gradient(circle at 100% 0%, #f0f7ff 0%, #fff 70%); }
         .hero h1 { font-size: 32px; font-weight: 800; line-height: 1.2; margin-bottom: 16px; letter-spacing: -1px; }
         .hero p { font-size: 16px; color: var(--g); margin-bottom: 32px; max-width: 800px; }
         .stats-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin: 40px 0; }
@@ -77,13 +77,13 @@
         .f-link { cursor: pointer; color: #fff; display: block; margin-bottom: 10px; font-size: 13px; text-decoration: none; transition: color 0.2s; }
         .f-link:hover { color: var(--p-light); }
         
-        /* Стили для траст-бейджей */
-        .trust-badges { display: flex; gap: 15px; align-items: center; margin-top: 20px; opacity: 0.6; filter: grayscale(100%); transition: 0.3s; }
-        .trust-badges:hover { opacity: 1; filter: grayscale(0%); }
-        .trust-badges svg { height: 24px; width: auto; }
+        .trust-badges { display: flex; gap: 10px; align-items: center; margin-top: 20px; opacity: 0.9; transition: 0.3s; }
+        .trust-badges:hover { opacity: 1; }
+        .trust-badges svg { height: 28px; width: auto; border-radius: 4px; box-shadow: 0 2px 4px rgba(0,0,0,0.2); }
+        .pci-badge { height: 28px; background: #1e293b; color: #fff; font-size: 11px; font-weight: 800; display: flex; align-items: center; padding: 0 10px; border-radius: 4px; border: 1px solid #334155; box-shadow: 0 2px 4px rgba(0,0,0,0.2); }
 
         @media (min-width: 768px) {
-            .hero { padding: 140px 0 80px; }
+            .hero { padding: 140px 20px 80px; }
             .hero h1 { font-size: 56px; }
             .hero p { font-size: 18px; }
             .stats-grid { grid-template-columns: repeat(4, 1fr); gap: 20px; }
@@ -153,13 +153,13 @@
             </section>
             <section class="container">
                 <div class="stats-grid">
-                    <div class="stat-item"><span class="stat-num">70+</span><span style="font-size:11px; color:var(--g)">Авторизованных центров</span></div>
-                    <div class="stat-item"><span class="stat-num">9000+</span><span style="font-size:11px; color:var(--g)">Активных участников</span></div>
+                    <div class="stat-item"><span class="stat-num">150+</span><span style="font-size:11px; color:var(--g)">Авторизованных центров</span></div>
+                    <div class="stat-item"><span class="stat-num">5000+</span><span style="font-size:11px; color:var(--g)">Активных участников</span></div>
                     <div class="stat-item"><span class="stat-num">8 лет</span><span style="font-size:11px; color:var(--g)">Инфраструктурного опыта</span></div>
                     <div class="stat-item"><span class="stat-num">BY</span><span style="font-size:11px; color:var(--g)">Региональное присутствие</span></div>
                 </div>
             </section>
-            <section class="container" style="padding: 40px 0;">
+            <section class="container" style="padding: 40px 20px;">
                 <h2 class="section-title">Компетенции инфраструктуры</h2>
                 <p class="section-subtitle">Система разработана для удовлетворения эксплуатационных потребностей различных категорий участников автомобильного движения.</p>     
                 <div class="features-grid">
@@ -180,7 +180,7 @@
                     </div>
                 </div>
             </section>
-            <section class="container" style="padding: 20px 0;">
+            <section class="container" style="padding: 20px 20px;">
                 <h2 class="section-title">Архитектура протоколов</h2>
                 <p class="section-subtitle">Выбор уровня взаимодействия определяет объем привлекаемых логистических и технических ресурсов системы.</p>
                 <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap:15px;">
@@ -201,7 +201,7 @@
                     </div>
                 </div>
             </section>
-            <section class="container" style="padding: 40px 0;">
+            <section class="container" style="padding: 40px 20px;">
                 <h2 class="section-title">Этапы интеграции в систему</h2>
                 <p class="section-subtitle">Процедура оформления физического идентификатора строго формализована для обеспечения сохранности данных.</p>
                 <div class="steps-grid">
@@ -227,13 +227,13 @@
                     </div>
                 </div>
             </section>
-            <section class="container" style="padding: 30px 0;">
+            <section class="container" style="padding: 30px 20px;">
                 <div style="background: #f8fafc; padding: 30px; border-radius: 20px; border: 1px solid var(--border); color: var(--g); font-size: 13px; text-align: justify; line-height: 1.7;">
                     <p style="margin-bottom: 10px; font-weight: 700; color: var(--t);">Соглашение об уровне услуг (SLA) и Внутренний аудит</p>
                     <p>Программа AutoCard Premium выступает результатом фундаментального многолетнего анализа эксплуатационных потребностей автовладельцев. Стратегическая деятельность ООО «Объединённая лояльность» неукоснительно направлена на внедрение и поддержание высочайших стандартов сервисной культуры на территории Республики Беларусь. Мы гарантируем целевой показатель доступности информационной базы (Uptime) на уровне 99.8% в рамках установленного SLA. Внедренная нами система строгого внутреннего учета и аудита взаимодействия надежно пресекает вероятность некорректного исполнения заявленных обязательств со стороны партнерских организаций, гарантируя абсолютную прозрачность и юридическую чистоту на каждом этапе сервисного цикла.</p>
                 </div>
             </section>
-            <section class="container" style="padding: 30px 0;">
+            <section class="container" style="padding: 30px 20px;">
                 <h2 class="section-title">Технологические стандарты</h2>
                 <div style="display: flex; flex-wrap: wrap; gap: 10px;">
                     <div style="padding: 12px 15px; border: 1px solid var(--border); border-radius: 10px; font-size: 12px; font-weight: 600;">🔐 Криптография TLS 1.3</div>
@@ -242,7 +242,7 @@
                     <div style="padding: 12px 15px; border: 1px solid var(--border); border-radius: 10px; font-size: 12px; font-weight: 600;">⚙️ Контроль SLA</div>
                 </div>
             </section>
-            <section class="container" style="padding: 40px 0; max-width: 900px; margin: 0 auto;">
+            <section class="container" style="padding: 40px 20px; max-width: 900px; margin: 0 auto;">
                 <h2 class="section-title" style="text-align: center;">База знаний (FAQ)</h2>
                 <p class="section-subtitle" style="text-align: center; margin: 0 auto 30px;">Ответы на стандартизированные запросы касательно операционной деятельности платформы.</p>
                 <details>
@@ -264,7 +264,7 @@
                     <iframe src="https://yandex.ru/map-widget/v1/?ll=27.567319%2C53.918458&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NjYzNTcxNhJC0NCXRgdC_0YPQsdC70LjQutCwINCR0LXQu9Cw0YDRg9GB0YwsINCc0LjQvdGB0LosINGD0LvQuNGG0LAg0JLQtdGA0Ysg0KXQvtGA0YPQttC10LksIDI5IgoN_Y9VQhV4Nl9C&z=16" width="100%" height="100%" frameborder="0"></iframe>
                 </div>
             </section>
-            <section id="order" class="container" style="padding-bottom:80px; padding-top: 20px;">
+            <section id="order" class="container" style="padding: 20px 20px 80px 20px;">
                 <div class="form-card">
                     <h2 style="text-align:center; margin-bottom:10px; font-size: 22px; font-weight: 800;">Авторизация в системе</h2>
                     <p style="text-align:center; font-size: 13px; color: var(--g); margin-bottom: 25px;">Заполнение формы инициализирует процесс внесения в базу данных.</p>
@@ -287,8 +287,9 @@
                     <p style="font-size:12px; color:#64748b; line-height: 1.6;">ООО «Объединённая лояльность»<br>УНП 192745908<br>г. Минск, ул. Веры Хоружей, 29</p>
                     
                     <div class="trust-badges">
-                        <svg viewBox="0 0 38 24" xmlns="http://www.w3.org/2000/svg"><path d="M14.07 19.33H12l-1.39-7.14h-2.1l-.23 1.15H5l3.22-10.6h3.42l2.43 16.59zM8.33 2.74H4.55L0 19.33h3.58l.71-2.48h4.2l.4 2.48h3.38l-4-16.59zM6 14.1l1.45-5.32h.1L8.3 14.1H6zm20.85-5.91c0-1.07-.94-1.57-2.15-1.57h-3.3v12.7h3.58c1.37 0 2.5-.54 2.5-1.78v-1.63h-1.6v1.46c0 .4-.4.65-.96.65h-1.5V11.2h1.4c.55 0 .9.26.9.65v1.26h1.6V8.2zm6.65 0c0-1.07-.94-1.57-2.15-1.57h-3.3v12.7h3.58c1.37 0 2.5-.54 2.5-1.78v-1.63h-1.6v1.46c0 .4-.4.65-.96.65h-1.5V11.2h1.4c.55 0 .9.26.9.65v1.26h1.6V8.2z" fill="#fff"/></svg>
-                        <svg viewBox="0 0 38 24" xmlns="http://www.w3.org/2000/svg"><path d="M23.18 12c0 3.32-2.68 6-6 6s-6-2.68-6-6 2.68-6 6-6 6 2.68 6 6zm10.82 0c0 3.32-2.68 6-6 6s-6-2.68-6-6 2.68-6 6-6 6 2.68 6 6zM11.18 12c0 3.32-2.68 6-6 6s-6-2.68-6-6 2.68-6 6-6 6 2.68 6 6z" fill="#fff"/></svg>
+                        <svg viewBox="0 0 50 34" xmlns="http://www.w3.org/2000/svg"><rect width="50" height="34" rx="4" fill="#1434CB"/><path d="M22.5 21.5h-3L21.5 12h3l-2 9.5zm9-9.2c-.8-.3-2.1-.5-3.6-.5-3.8 0-6.5 2-6.5 4.9 0 1.8 1.6 2.8 2.9 3.4 1.3.6 1.8 1 1.8 1.6 0 .9-1.1 1.3-2.2 1.3-1.5 0-2.3-.2-3.3-.7l-.5 2.1c1 .5 2.6.9 4.3.9 4.1 0 6.8-2 6.8-5.1 0-1.6-1-2.7-2.8-3.3-1.2-.6-1.9-.9-1.9-1.5 0-.5.6-1 2.1-1 1.2 0 2.2.2 3 .6l.5-2.2zm7.5 6.2c.2-1.2 1.9-5.1 1.9-5.1-.1.1.4-1.1.6-1.5l.3 1.4s1 4.7 1.2 5.2h-4zm2.1-9h-2.5c-.6 0-1.1.4-1.3 1l-3.7 8.5h3.2l.6-1.8h3.9l.4 1.8h2.8l-3.4-9.5zm-33.1 9.5h3.1l2-6.5c.2-.7.4-1 .8-1h1.7l-2.6 7.5z" fill="#fff"/><path d="M12 12h-3.4c-.6 0-1.1.3-1.4.9l-4 7.6h3.3l.6-1.8h4.4L12 12z" fill="#F7B600"/></svg>
+                        <svg viewBox="0 0 50 34" xmlns="http://www.w3.org/2000/svg"><rect width="50" height="34" rx="4" fill="#363636"/><circle cx="18" cy="17" r="9" fill="#EB001B"/><circle cx="32" cy="17" r="9" fill="#F79E1B"/><path d="M25 24.3c-2.4-1.7-4-4.4-4-7.3s1.6-5.6 4-7.3c2.4 1.7 4 4.4 4 7.3s-1.6 5.6-4 7.3z" fill="#FF5F00"/></svg>
+                        <div class="pci-badge">PCI DSS</div>
                     </div>
                 </div>
                 <div>
@@ -304,7 +305,6 @@
                     <span class="f-link" onclick="showM('partners')">Партнерское взаимодействие</span>
                     
                     <a href="https://cpd.by/" target="_blank" rel="nofollow noopener" class="f-link" style="opacity:0.8">Реестр НЦЗПД РБ</a>
-                    
                     <p style="font-size:12px; color:#64748b; margin-top:15px">autocardpremiumby@gmail.com<br>+375292987765</p>
                 </div>
             </div>
